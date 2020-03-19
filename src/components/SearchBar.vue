@@ -24,18 +24,32 @@
                 <v-col cols="10">
                   <v-card flat>
                     <v-tabs-items v-model="dataTabs">
-                      <v-tab-item>
+                      <v-tab-item v-for="tab in tabs" :key="tab.title">
                         <v-text-field
                           v-model="keyword"
                           class="keyword"
-                          prepend-inner-icon="mdi-email"
+                          prepend-inner-icon="fa-search"
                           :append-icon="show ? 'mdi-microphone' : 'mdi-microphone-outline'"
                           outlined
-                          @click:append = "show = !show"
+                          @click:append="show = !show"
                         ></v-text-field>
+                        <v-card flat color="transparent" class="mt-n9">
+                          <v-card-text align="center">
+                            <v-container>
+                              <v-row no-gutters>
+                                <v-col class="suggestion-link">Try This:</v-col>
+                                <v-col
+                                  v-for="suggestion in tab.suggestions"
+                                  :key="suggestion.id"
+                                  :cols="suggestion.id == 4 ? 2: ''"
+                                >
+                                  <a href="#" class="suggestion-link">{{suggestion.title}}</a>
+                                </v-col>
+                              </v-row>
+                            </v-container>
+                          </v-card-text>
+                        </v-card>
                       </v-tab-item>
-
-                      <v-tab-item>Tab2</v-tab-item>
                     </v-tabs-items>
                   </v-card>
                 </v-col>
@@ -54,12 +68,78 @@ export default {
   data() {
     return {
       keyword: "",
-      show:false,
+      show: false,
       dataTabs: null,
       currentTab: null,
       tabs: [
-        { title: "Search CV", id: 1 },
-        { title: "Search Job", id: 2 }
+        {
+          title: "Search CV",
+          id: 1,
+          suggestions: [
+            {
+              title: "ios developer",
+              id: 1
+            },
+            {
+              title: "Illustrator",
+              id: 2
+            },
+            {
+              title: "Landing Page",
+              id: 3
+            },
+            {
+              title: "Website design",
+              id: 4
+            },
+            {
+              title: "Mobile app",
+              id: 5
+            },
+            {
+              title: "Dashboard",
+              id: 6
+            },
+            {
+              title: "Logo",
+              id: 7
+            }
+          ]
+        },
+        {
+          title: "Search Job",
+          id: 2,
+          suggestions: [
+            {
+              title: "ios developer",
+              id: 1
+            },
+            {
+              title: "Illustrator",
+              id: 2
+            },
+            {
+              title: "Landing Page",
+              id: 3
+            },
+            {
+              title: "Website design",
+              id: 4
+            },
+            {
+              title: "Mobile app",
+              id: 5
+            },
+            {
+              title: "Dashboard",
+              id: 6
+            },
+            {
+              title: "Logo",
+              id: 7
+            }
+          ]
+        }
       ]
     };
   }
@@ -89,5 +169,9 @@ export default {
   margin-top: -1px !important;
   background: #fdfdfd !important;
   border-radius: 0px 10px 10px 10px !important;
+}
+
+.suggestion-link {
+  color: #838ca3 !important;
 }
 </style>
