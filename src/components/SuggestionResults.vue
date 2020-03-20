@@ -60,23 +60,3 @@ export default {
 };
 </script>
 
-<style>
-.suggestion-card {
-  border: 2px solid #e5e5e5 !important;
-  border-radius: 10px !important;
-}
-
-.cv-url {
-  color: #0046fe !important;
-  font-size: 15px;
-  font-weight: 600;
-}
-.result-title {
-  color: #002178;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.result-title span {
-  color: #838ca3;
-}
-</style>

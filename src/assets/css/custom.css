@@ -53,8 +53,33 @@
     color: #838CA3;
 }
 
+.suggestion-card {
+    border: 2px solid #e5e5e5 !important;
+    border-radius: 10px !important;
+}
+
+.cv-url a {
+    color: #0046fe !important;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.result-title {
+    color: #002178;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.result-title span {
+    color: #838ca3;
+}
+
 .cv-results-card {
     border-bottom: 1px solid #EBEFF5 !important;
+}
+
+.v-btn--fab.v-size--default.message-btn {
+    border: 1px solid #DAF0F6 !important;
 }
 
 @media screen and (max-width: 959px) {

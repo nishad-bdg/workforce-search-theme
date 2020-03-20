@@ -24,11 +24,17 @@
                   <v-card flat v-for="result in results" :key="result.id" class="cv-results-card">
                     <v-list>
                       <v-list-item>
-                        <v-badge color="#0046FE" icon="mdi-message-outline" bordered overlap bottom offset-y="40" offset-x="28">
-                          <v-list-item-avatar size="60" style="border:2px solid rgba(131, 140, 163, 0.20);">
-                            <v-img :src="getProfileImg(result.id)"></v-img>
-                          </v-list-item-avatar>
-                        </v-badge>
+                        <v-list-item-avatar
+                          size="60"
+                          style="border:2px solid rgba(131, 140, 163, 0.20);"
+                        >
+                          <v-img :src="getProfileImg(result.id)"></v-img>
+                        </v-list-item-avatar>
+                        <v-list-item-icon class="ml-n8 mt-10 mr-2">
+                          <v-btn fab color="#0046FE"  height="20" width="20" class="message-btn">
+                            <img width="10" src="../assets/icons/message.png">
+                          </v-btn>
+                        </v-list-item-icon>
 
                         <v-list-item-content>
                           <div class="cv-url">
@@ -47,19 +53,36 @@
                     </v-card-text>
                     <v-card-actions class="mt-n5">
                       <div>
-                        <v-btn icon x-small>
-                          <img width="10" src="../assets/social-media/civie_logo.png" />
-                        </v-btn>
-                        <v-btn icon class="ml-n1" x-small>
-                          <v-icon color="#0046FE" x-small>mdi-behance</v-icon>
+                        <v-btn icon class="ml-n1" small>
+                          <img width="15" src="../assets/icons/civie_logo.png" />
                         </v-btn>
 
-                        <v-btn icon class="ml-n1" x-small>
-                          <v-icon color="#0046FE" x-small>fa-linkedin-in</v-icon>
+                        <v-btn icon class="ml-n1" small>
+                          <img width="17" src="../assets/icons/behance.png" />
                         </v-btn>
 
-                        <v-btn icon class="ml-n1" x-small>
-                          <v-icon color="#0046FE" x-small>fa-dribbble</v-icon>
+                        <v-btn icon class="ml-n1" small>
+                          <img width="22" src="../assets/icons/linkedin.png" />
+                        </v-btn>
+
+                        <v-btn icon class="ml-n1" small>
+                          <img width="15" src="../assets/icons/dribbble.png" />
+                        </v-btn>
+                      </div>
+                      <div class="mx-8">
+                        <v-btn icon class="ml-n1" small>
+                          <img width="8" src="../assets/icons/facebook.png" />
+                        </v-btn>
+
+                        <v-btn icon small>
+                          <v-icon color="#0046FE" small>mdi-instagram</v-icon>
+                        </v-btn>
+
+                        <v-btn icon small>
+                          <v-icon color="#0046FE" small>mdi-whatsapp</v-icon>
+                        </v-btn>
+                        <v-btn icon class="ml-n1" small>
+                          <img width="12" src="../assets/icons/pdf-download.png" />
                         </v-btn>
                       </div>
                     </v-card-actions>
@@ -80,7 +103,7 @@ export default {
   name: "SuggestionResults",
   data() {
     return {
-      keyword: "",
+      keyword: "Software Developer",
       show: false,
       results: [
         {
