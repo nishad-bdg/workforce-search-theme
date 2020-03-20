@@ -45,6 +45,9 @@
                           <search-suggestion></search-suggestion>
                         </v-card-text>
                       </v-card>
+                      <v-card flat v-else class="mt-n2">
+                        <suggestion-results></suggestion-results>
+                      </v-card>
                     </v-tab-item>
                   </v-tabs-items>
                 </v-card>
@@ -60,11 +63,13 @@
 
 <script>
 import SearchSuggestion from "./SearchSuggestion";
+import SuggestionResults from  './SuggestionResults'
 
 export default {
   name: "SearchBar",
   components: {
-    SearchSuggestion
+    SearchSuggestion,
+    SuggestionResults
   },
   props: ["suggestions"],
   data() {
