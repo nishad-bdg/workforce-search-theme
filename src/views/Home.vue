@@ -10,7 +10,7 @@
           </v-card>
         </v-col>
         <v-col class="mt-n12" cols="12">
-          <search-bar></search-bar>
+          <search-bar :suggestions=suggestions></search-bar>
         </v-col>
       </v-row>
     </v-container>
@@ -29,19 +29,10 @@ export default {
   data(){
     return{
       showlogo:false,
+      suggestions:true,
     }
   }
 };
 </script>
 
-<style>
-.logo {
-  width: 25% !important;
-}
 
-@media screen and (max-width: 959px) {
-  .logo {
-    width: 35% !important;
-  }
-}
-</style>

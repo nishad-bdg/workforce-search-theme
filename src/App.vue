@@ -18,3 +18,6 @@ export default {
 };
 </script>
 
+<style>
+  @import url('./assets/css/custom.css');
+</style>

@@ -34,8 +34,13 @@
                           @click:append="show = !show"
                         ></v-text-field>
                       </v-card>
-
-                      <v-card flat color="transparent" class="mt-n9 hidden-xs-only">
+                      <!-- Card For Suggestions -->
+                      <v-card
+                        flat
+                        color="transparent"
+                        class="mt-n9 hidden-xs-only"
+                        v-if="suggestions"
+                      >
                         <v-card-text align="center">
                           <search-suggestion></search-suggestion>
                         </v-card-text>
@@ -45,6 +50,7 @@
                 </v-card>
               </v-col>
             </v-row>
+
           </v-col>
         </v-row>
       </v-container>
@@ -53,13 +59,14 @@
 </template>
 
 <script>
-import SearchSuggestion from './SearchSuggestion'
+import SearchSuggestion from "./SearchSuggestion";
 
 export default {
   name: "SearchBar",
-  components:{
-    SearchSuggestion,
+  components: {
+    SearchSuggestion
   },
+  props: ["suggestions"],
   data() {
     return {
       keyword: "",
@@ -69,46 +76,14 @@ export default {
       tabs: [
         {
           title: "Search CV",
-          id: 1,
+          id: 1
         },
         {
           title: "Search Job",
-          id: 2,
+          id: 2
         }
       ]
     };
   }
 };
 </script>
-
-
-<style>
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
-
-.ct-tab {
-  font-family: "Noto Sans", sans-serif !important;
-  background-color: #fdfdfd !important;
-  color: #838ca3 !important;
-  border: 2px solid #ebeff5 !important;
-  box-sizing: border-box !important;
-  border-radius: 10px 10px 0px 0px !important;
-}
-.ct-tab-title {
-  font-family: "Noto Sans", sans-serif !important;
-  font-size: 0.8rem !important;
-  font-weight: 400 !important;
-}
-
-.active-tab {
-  font-family: "Noto Sans", sans-serif !important;
-  background-color: #4e6ef1;
-  color: #0046fe !important;
-  overflow: hidden !important;
-}
-
-.v-text-field {
-  margin-top: -1px !important;
-  background: #fdfdfd !important;
-  border-radius: 0px 10px 10px 10px !important;
-}
-</style>

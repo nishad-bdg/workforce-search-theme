@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import SearchSuggestion from '../views/SearchSuggestion'
+import SearchSuggestionPage from '../views/SearchSuggestionPage'
 
 Vue.use(VueRouter)
 
@@ -11,9 +11,9 @@ const routes = [{
         component: Home
     },
     {
-        path: '/search-suggestion',
-        name: 'SearchSugesstion',
-        component: SearchSuggestion
+        path: '/search-suggestion-page',
+        name: 'SearchSugesstionPage',
+        component: SearchSuggestionPage
     }
 
 ]

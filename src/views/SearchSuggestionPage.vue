@@ -11,6 +11,7 @@
         </v-col>
         <v-col class="mt-n12" cols="12">
           <search-bar></search-bar>
+          
         </v-col>
       </v-row>
     </v-container>
@@ -21,27 +22,19 @@
 import AppBar from '@/components/AppBar'
 import SearchBar from "@/components/SearchBar";
 export default {
-  name: "Home",
+  name: "SearchSuggestionPage",
   components: {
     SearchBar,
     AppBar,
   },
   data(){
     return{
-      showlogo:true,
+      showlogo:false,
+      suggestions:false
+
     }
   }
 };
 </script>
 
-<style>
-.logo {
-  width: 25% !important;
-}
 
-@media screen and (max-width: 959px) {
-  .logo {
-    width: 35% !important;
-  }
-}
-</style>
