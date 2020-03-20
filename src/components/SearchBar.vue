@@ -148,7 +148,11 @@ export default {
 
 
 <style>
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+
 .ct-tab {
+  font-family: "Noto Sans", sans-serif !important;;
   background-color: #fdfdfd !important;
   color: #838ca3 !important;
   border: 2px solid #ebeff5 !important;
@@ -156,13 +160,16 @@ export default {
   border-radius: 10px 10px 0px 0px !important;
 }
 .ct-tab-title {
+  font-family: "Noto Sans", sans-serif !important;;
   font-size: 0.8rem !important;
   font-weight: 400 !important;
 }
 
 .active-tab {
+  font-family: "Noto Sans", sans-serif !important;;
   background-color: #4e6ef1;
   color: #0046fe !important;
+  overflow: hidden !important;
 }
 
 .v-text-field {
@@ -172,6 +179,8 @@ export default {
 }
 
 .suggestion-link {
+  font-family: "Noto Sans", sans-serif !important;;
   color: #838ca3 !important;
+  font-size: 12px;
 }
 </style>
