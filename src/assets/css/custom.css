@@ -59,14 +59,16 @@
 }
 
 .cv-url a {
+    font-family: "Noto Sans", sans-serif !important;
     color: #0046fe !important;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
 }
 
 .result-title {
+    font-family: "Noto Sans", sans-serif !important;
     color: #002178;
-    font-size: 1.2rem;
+    font-size: 14px;
     font-weight: 600;
 }
 
@@ -80,6 +82,27 @@
 
 .v-btn--fab.v-size--default.message-btn {
     border: 1px solid #DAF0F6 !important;
+}
+
+.job-search-title a {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0046fe !important;
+}
+
+.job-search-company-name {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 16px;
+    font-weight: bold;
+    color: #002178 !important;
+}
+
+.apply-now a {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 14px;
+    color: #0046FE !important;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 959px) {

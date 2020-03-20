@@ -100,7 +100,7 @@
 
 <script>
 export default {
-  name: "SuggestionResults",
+  name: "CvSearch",
   data() {
     return {
       keyword: "Software Developer",
