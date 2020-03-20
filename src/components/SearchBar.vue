@@ -92,3 +92,10 @@ export default {
   }
 };
 </script>
+
+<style>
+  .keyword input{
+    color:#838CA3 !important;
+    font-size: 15px !important;
+  }
+</style>
