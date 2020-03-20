@@ -4,7 +4,7 @@
       <v-card-text align="center">
         <a
           href="#"
-          class="footer-link mx-5"
+          class="footer-link mx-md-5 mx-sm-5 mx-2"
           v-for="footer in footerLinks"
           :key="footer.id"
         >{{footer.title}}</a>
@@ -49,5 +49,15 @@ export default {
   font-family: "Noto Sans" !important;
   text-decoration: none;
   color: #838CA3 !important;
+  font-size: 16px !important;
 }
+
+@media screen and (max-width: 599px){
+    .footer-link{
+      font-size: 12px !important;
+      
+    }
+}
+
+
 </style>

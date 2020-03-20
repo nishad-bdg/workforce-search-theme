@@ -4,7 +4,7 @@
       <v-card-text>
         <v-container>
           <v-row>
-            <v-col cols="12" md="8" sm="12" class="ml-5">
+            <v-col cols="12" md="8" sm="8" class="ml-md-5 ml-sm-5">
               <v-text-field v-model="keyword" class="keyword-2" outlined>
                 <template slot="append">
                   <v-icon>fa-search</v-icon>
@@ -12,13 +12,13 @@
                 </template>
               </v-text-field>
             </v-col>
-            <v-col cols="12" md="8" sm="12" class="mt-n12 ml-5">
+            <v-col cols="12" md="8" sm="12" class="mt-n12 ml-md-5 ml-sm-5">
               <v-card color="transparent" flat>
                 <div class="result-counter">About 112 results(0.21 seconds)</div>
               </v-card>
             </v-col>
             <!-- Search Results -->
-            <v-col cols="12" md="8" sm="12">
+            <v-col cols="12" md="8" sm="8">
               <v-row>
                 <v-col>
                   <v-card flat v-for="result in results" :key="result.id" class="cv-results-card">

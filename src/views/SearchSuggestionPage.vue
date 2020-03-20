@@ -1,5 +1,5 @@
 <template>
-    <v-container fill-height fluid>
+    <v-container fill-height fluid >
       <app-bar :showlogo=showlogo></app-bar>
       <v-row align="center" justify="center">
         <v-col>
