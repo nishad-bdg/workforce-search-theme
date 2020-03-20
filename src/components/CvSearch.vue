@@ -4,7 +4,7 @@
       <v-card-text>
         <v-container>
           <v-row>
-            <v-col cols="12" md="8" sm="12">
+            <v-col cols="12" md="8" sm="12" class="ml-5">
               <v-text-field v-model="keyword" class="keyword-2" outlined>
                 <template slot="append">
                   <v-icon>fa-search</v-icon>
@@ -12,7 +12,7 @@
                 </template>
               </v-text-field>
             </v-col>
-            <v-col cols="12" md="8" sm="12" class="mt-n10">
+            <v-col cols="12" md="8" sm="12" class="mt-n10 ml-5">
               <v-card color="transparent" flat>
                 <div class="result-counter">About 112 results(0.21 seconds)</div>
               </v-card>
@@ -25,12 +25,12 @@
                     <v-list>
                       <v-list-item>
                         <v-list-item-avatar
-                          size="60"
+                          size="70"
                           style="border:2px solid rgba(131, 140, 163, 0.20);"
                         >
                           <v-img :src="getProfileImg(result.id)"></v-img>
                         </v-list-item-avatar>
-                        <v-list-item-icon class="ml-n8 mt-10 mr-2">
+                        <v-list-item-icon class="ml-n8 mt-12 mr-2">
                           <v-btn fab color="#0046FE"  height="20" width="20" class="message-btn">
                             <img width="10" src="../assets/icons/message.png">
                           </v-btn>

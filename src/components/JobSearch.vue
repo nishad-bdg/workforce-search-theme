@@ -28,7 +28,7 @@
                           size="60"
                           style="border:2px solid rgba(131, 140, 163, 0.20);"
                         >
-                          <v-img :src="getProfileImg(result.logo)"></v-img>
+                          <v-img contain :src="getProfileImg(result.logo)"></v-img>
                         </v-list-item-avatar>
 
                         <v-list-item-content>
