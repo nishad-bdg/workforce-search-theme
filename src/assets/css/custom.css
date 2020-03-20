@@ -53,6 +53,10 @@
     color: #838CA3;
 }
 
+.cv-results-card {
+    border-bottom: 1px solid #EBEFF5 !important;
+}
+
 @media screen and (max-width: 959px) {
     .logo {
         width: 35% !important;

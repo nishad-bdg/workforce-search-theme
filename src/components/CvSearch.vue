@@ -18,15 +18,18 @@
               </v-card>
             </v-col>
             <!-- Search Results -->
-            <v-col cols="12">
+            <v-col cols="12" md="8" sm="12">
               <v-row>
                 <v-col>
-                  <v-card flat v-for="result in results" :key="result.id">
+                  <v-card flat v-for="result in results" :key="result.id" class="cv-results-card">
                     <v-list>
                       <v-list-item>
-                        <v-list-item-avatar size="60">
-                          <v-img :src="getProfileImg(result.id)"></v-img>
-                        </v-list-item-avatar>
+                        <v-badge color="#0046FE" icon="mdi-message-outline" bordered overlap bottom offset-y="40" offset-x="28">
+                          <v-list-item-avatar size="60" style="border:2px solid rgba(131, 140, 163, 0.20);">
+                            <v-img :src="getProfileImg(result.id)"></v-img>
+                          </v-list-item-avatar>
+                        </v-badge>
+
                         <v-list-item-content>
                           <div class="cv-url">
                             <a :href="result.cv_url">{{result.cv_url}}</a>
@@ -42,8 +45,23 @@
                       <div class="mb-n1 time-slot">{{result.time_slot}}</div>
                       <div class="time-slot">{{result.skills}}</div>
                     </v-card-text>
-                    <v-card-actions>
-                      
+                    <v-card-actions class="mt-n5">
+                      <div>
+                        <v-btn icon x-small>
+                          <img width="10" src="../assets/social-media/civie_logo.png" />
+                        </v-btn>
+                        <v-btn icon class="ml-n1" x-small>
+                          <v-icon color="#0046FE" x-small>mdi-behance</v-icon>
+                        </v-btn>
+
+                        <v-btn icon class="ml-n1" x-small>
+                          <v-icon color="#0046FE" x-small>fa-linkedin-in</v-icon>
+                        </v-btn>
+
+                        <v-btn icon class="ml-n1" x-small>
+                          <v-icon color="#0046FE" x-small>fa-dribbble</v-icon>
+                        </v-btn>
+                      </div>
                     </v-card-actions>
                   </v-card>
                 </v-col>
