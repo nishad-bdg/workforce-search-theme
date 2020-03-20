@@ -20,7 +20,7 @@
               </v-tabs>
             </v-card>
             <v-row no-gutters>
-              <v-col cols="10">
+              <v-col cols="10" sm="12">
                 <v-card flat>
                   <v-tabs-items v-model="dataTabs">
                     <v-tab-item v-for="tab in tabs" :key="tab.title">
@@ -93,9 +93,3 @@ export default {
 };
 </script>
 
-<style>
-  .keyword input{
-    color:#838CA3 !important;
-    font-size: 15px !important;
-  }
-</style>

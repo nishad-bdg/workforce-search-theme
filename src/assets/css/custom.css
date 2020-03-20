@@ -25,10 +25,32 @@
     overflow: hidden !important;
 }
 
-.v-text-field {
+.v-text-field.keyword {
     margin-top: -1px !important;
     background: #fdfdfd !important;
     border-radius: 0px 10px 10px 10px !important;
+}
+
+.v-text-field.keyword-2 {
+    background: #fdfdfd !important;
+    border-radius: 10px !important;
+}
+
+.keyword input {
+    color: #838CA3 !important;
+    font-size: 15px !important;
+}
+
+.result-counter {
+    font-family: "Noto Sans", sans-serif !important;
+    color: #838CA3;
+    font-size: 12px;
+}
+
+.time-slot {
+    font-family: "Noto Sans", sans-serif !important;
+    font-size: 14px;
+    color: #838CA3;
 }
 
 @media screen and (max-width: 959px) {
