@@ -1,5 +1,5 @@
 <template>
-  <v-footer v-bind="localAttrs" color="#F7F9FF;" app dense>
+  <v-footer  color="#F7F9FF;" app dense>
     <v-card flat color="transparent" width="100%">
       <v-card-text align="center">
         <a
@@ -28,17 +28,17 @@ export default {
     };
   },
   computed: {
-    localAttrs() {
-      const attrs = {};
+    // localAttrs() {
+    //   const attrs = {};
 
-      if (this.variant === "default") {
-        attrs.absolute = false;
-        attrs.fixed = false;
-      } else {
-        attrs[this.variant] = true;
-      }
-      return attrs;
-    }
+    //   if (this.variant === "default") {
+    //     attrs.absolute = false;
+    //     attrs.fixed = false;
+    //   } else {
+    //     attrs[this.variant] = true;
+    //   }
+    //   return attrs;
+    // }
   }
 };
 </script>
