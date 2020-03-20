@@ -28,7 +28,7 @@ export default {
   },
   data(){
     return{
-      showlogo:false,
+      showlogo:true,
     }
   }
 };
