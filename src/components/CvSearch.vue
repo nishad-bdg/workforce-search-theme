@@ -66,19 +66,19 @@
                         </v-btn>
 
                         <v-btn icon class="ml-n1" small>
-                          <img width="15" src="../assets/icons/dribbble.png" />
+                          <img width="13" src="../assets/icons/dribbble.png" />
                         </v-btn>
                       </div>
                       <div class="mx-8">
-                        <v-btn icon class="ml-n1" small>
+                        <v-btn icon class="ml-n1 mr-1" small>
                           <img width="8" src="../assets/icons/facebook.png" />
                         </v-btn>
 
-                        <v-btn icon small>
+                        <v-btn icon small class="mr-1">
                           <v-icon color="#0046FE" small>mdi-instagram</v-icon>
                         </v-btn>
 
-                        <v-btn icon small>
+                        <v-btn icon small class="mr-1">
                           <v-icon color="#0046FE" small>mdi-whatsapp</v-icon>
                         </v-btn>
                         <v-btn icon class="ml-n1" small>
