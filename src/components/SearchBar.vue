@@ -20,7 +20,7 @@
               </v-tabs>
             </v-card>
             <v-row no-gutters>
-              <v-col cols="10" sm="12">
+              <v-col cols="10" md="10" sm="12">
                 <v-card flat>
                   <v-tabs-items v-model="dataTabs">
                     <v-tab-item v-for="tab in tabs" :key="tab.title">
