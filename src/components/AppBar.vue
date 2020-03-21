@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app-bar color="white" light tile class=""  height="90" app>
+    <v-app-bar color="white" light tile class=""  height="90" app >
       <v-img
         v-if="showlogo"
         class="mx-2"

@@ -41,6 +41,11 @@
     font-size: 15px !important;
 }
 
+.keyword-2 input {
+    color: #838CA3 !important;
+    font-size: 15px !important;
+}
+
 .result-counter {
     font-family: "Noto Sans", sans-serif !important;
     color: #838CA3;
@@ -103,6 +108,10 @@
     font-size: 14px;
     color: #0046FE !important;
     text-decoration: none;
+}
+
+.theme--light.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state)>.v-input__control>.v-input__slot fieldset {
+    border: 2px solid #EBEFF5 !important;
 }
 
 @media screen and (max-width: 959px) {

@@ -23,16 +23,12 @@
               <v-tabs-items v-model="dataTabs">
                 <v-tab-item v-for="tab in tabs" :key="tab.title">
                   <v-card flat>
-                    <v-text-field
-                      v-model="keyword"
-                      class="keyword"
-                      outlined
-                    >
-                      <template slot="prepend-inner"> 
+                    <v-text-field autofocus v-model="keyword" class="keyword" outlined>
+                      <template slot="prepend-inner">
                         <v-img contain width="25" src="../assets/icons/ion_search.png"></v-img>
                       </template>
 
-                      <template slot="append"> 
+                      <template slot="append">
                         <v-img contain width="22" src="../assets/icons/microphone.png"></v-img>
                       </template>
                     </v-text-field>
