@@ -3,7 +3,7 @@
     <v-card-text>
       <v-container>
         <v-row align="center" justify="center">
-          <v-col offset-md="2">
+          <v-col md="10" sm="10" cols="12">
             <v-card flat color="transparent">
               <v-tabs height="35" v-model="dataTabs" class="parent-tab" hide-slider>
                 <v-tab
@@ -19,41 +19,31 @@
                 >{{tab.title}}</v-tab>
               </v-tabs>
             </v-card>
-            <v-row no-gutters>
-              <v-col cols="10" md="10" sm="12">
-                <v-card flat>
-                  <v-tabs-items v-model="dataTabs">
-                    <v-tab-item v-for="tab in tabs" :key="tab.title">
-                      <v-card flat>
-                        <v-text-field
-                          v-model="keyword"
-                          class="keyword"
-                          prepend-inner-icon="fa-search"
-                          :append-icon="show ? 'mdi-microphone' : 'mdi-microphone-outline'"
-                          outlined
-                          @click:append="show = !show"
-                        ></v-text-field>
-                      </v-card>
-                      <!-- Card For Suggestions -->
-                      <v-card
-                        flat
-                        color="transparent"
-                        class="mt-n9 hidden-xs-only"
-                        v-if="suggestions"
-                      >
-                        <v-card-text align="center">
-                          <search-suggestion></search-suggestion>
-                        </v-card-text>
-                      </v-card>
-                      <v-card flat v-else class="mt-n2">
-                        <suggestion-results></suggestion-results>
-                      </v-card>
-                    </v-tab-item>
-                  </v-tabs-items>
-                </v-card>
-              </v-col>
-            </v-row>
-
+            <v-card flat>
+              <v-tabs-items v-model="dataTabs">
+                <v-tab-item v-for="tab in tabs" :key="tab.title">
+                  <v-card flat>
+                    <v-text-field
+                      v-model="keyword"
+                      class="keyword"
+                      prepend-inner-icon="fa-search"
+                      :append-icon="show ? 'mdi-microphone' : 'mdi-microphone-outline'"
+                      outlined
+                      @click:append="show = !show"
+                    ></v-text-field>
+                  </v-card>
+                  <!-- Card For Suggestions -->
+                  <v-card flat color="transparent" class="mt-n9 hidden-xs-only" v-if="suggestions">
+                    <v-card-text align="center">
+                      <search-suggestion></search-suggestion>
+                    </v-card-text>
+                  </v-card>
+                  <v-card flat v-else class="mt-n2">
+                    <suggestion-results></suggestion-results>
+                  </v-card>
+                </v-tab-item>
+              </v-tabs-items>
+            </v-card>
           </v-col>
         </v-row>
       </v-container>
@@ -63,7 +53,7 @@
 
 <script>
 import SearchSuggestion from "./SearchSuggestion";
-import SuggestionResults from  './SuggestionResults'
+import SuggestionResults from "./SuggestionResults";
 
 export default {
   name: "SearchBar",
