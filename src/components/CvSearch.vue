@@ -7,8 +7,8 @@
             <v-col cols="10" md="8" sm="8" class="ml-md-5 ml-sm-5">
               <v-text-field v-model="keyword" class="keyword-2" outlined>
                 <template slot="append">
-                  <v-icon>fa-search</v-icon>
-                  <v-icon class="ml-4">mdi-microphone</v-icon>
+                  <v-img contain width="22" src="../assets/icons/microphone.png"></v-img>
+                  <v-img class="ml-4" contain width="25" src="../assets/icons/ion_search.png"></v-img>
                 </template>
               </v-text-field>
             </v-col>
@@ -31,8 +31,8 @@
                           <v-img :src="getProfileImg(result.id)"></v-img>
                         </v-list-item-avatar>
                         <v-list-item-icon class="ml-n8 mt-12 mr-2">
-                          <v-btn fab color="#0046FE"  height="20" width="20" class="message-btn">
-                            <img width="10" src="../assets/icons/message.png">
+                          <v-btn fab color="#0046FE" height="20" width="20" class="message-btn">
+                            <img width="10" src="../assets/icons/message.png" />
                           </v-btn>
                         </v-list-item-icon>
 

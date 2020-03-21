@@ -7,8 +7,8 @@
             <v-col cols="12" md="8" sm="8" class="ml-md-5 ml-sm-5">
               <v-text-field v-model="keyword" class="keyword-2" outlined>
                 <template slot="append">
-                  <v-icon>fa-search</v-icon>
-                  <v-icon class="ml-4">mdi-microphone</v-icon>
+                  <v-img contain width="22" src="../assets/icons/microphone.png"></v-img>
+                  <v-img class="ml-4" contain width="25" src="../assets/icons/ion_search.png"></v-img>
                 </template>
               </v-text-field>
             </v-col>
@@ -58,23 +58,23 @@
                       </div>
 
                       <div class="ml-8">
-                        <v-btn icon class="" small>
+                        <v-btn icon class small>
                           <img class="mx-1" width="15" src="../assets/icons/dribbble.png" />
                         </v-btn>
 
-                        <v-btn icon class="" small>
+                        <v-btn icon class small>
                           <img class="mx-1" width="15" src="../assets/icons/phone-outgoing.png" />
                         </v-btn>
 
-                        <v-btn icon class="" small>
+                        <v-btn icon class small>
                           <img class="mx-1" width="15" src="../assets/icons/mail.png" />
                         </v-btn>
                       </div>
                     </v-card-actions>
                     <v-card-actions class="mt-n2 ml-2">
-                        <div class="apply-now">
-                            <a href="#">Apply Now</a>
-                        </div>
+                      <div class="apply-now">
+                        <a href="#">Apply Now</a>
+                      </div>
                     </v-card-actions>
                   </v-card>
                 </v-col>
@@ -106,7 +106,7 @@ export default {
           logo: "tectonic"
         },
         {
-          id: 1,
+          id: 2,
           title: "Senior UI/UX Designer",
           duration: "6 days left",
           company_name: "Tectonic Software",
@@ -115,7 +115,7 @@ export default {
           logo: "tectonic"
         },
         {
-          id: 1,
+          id: 3,
           title: "Senior UI/UX Designer",
           duration: "6 days left",
           company_name: "Tectonic Software",
@@ -130,6 +130,9 @@ export default {
     getProfileImg(logo) {
       let image = require.context("../assets/", false, /\.png$/);
       return image("./" + logo + ".png");
+    },
+    hello() {
+      alert("Hello");
     }
   }
 };

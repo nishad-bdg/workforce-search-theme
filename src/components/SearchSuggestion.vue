@@ -53,6 +53,6 @@ export default {
 .suggestion-link {
   font-family: "Noto Sans", sans-serif !important;
   color: #838ca3 !important;
-  font-size: 0.9vw;
+  font-size: 10px;
 }
 </style>

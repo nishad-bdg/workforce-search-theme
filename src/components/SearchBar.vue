@@ -3,7 +3,7 @@
     <v-card-text>
       <v-container>
         <v-row align="center" justify="center">
-          <v-col md="8" sm="10" cols="12" offset-md="0" offset-sm="0" offset="1">
+          <v-col md="7" sm="10" cols="12" offset-md="0" offset-sm="0" offset="1">
             <v-card flat color="transparent">
               <v-tabs height="35" v-model="dataTabs" class="parent-tab" hide-slider>
                 <v-tab
@@ -26,11 +26,16 @@
                     <v-text-field
                       v-model="keyword"
                       class="keyword"
-                      prepend-inner-icon="fa-search"
-                      :append-icon="show ? 'mdi-microphone' : 'mdi-microphone-outline'"
                       outlined
-                      @click:append="show = !show"
-                    ></v-text-field>
+                    >
+                      <template slot="prepend-inner"> 
+                        <v-img contain width="25" src="../assets/icons/ion_search.png"></v-img>
+                      </template>
+
+                      <template slot="append"> 
+                        <v-img contain width="22" src="../assets/icons/microphone.png"></v-img>
+                      </template>
+                    </v-text-field>
                   </v-card>
                   <!-- Card For Suggestions -->
                   <v-card flat color="transparent" class="mt-n9 hidden-xs-only" v-if="suggestions">
