@@ -5,7 +5,7 @@
         <v-col>
           <v-card flat align="center" color="transparent">
             <v-card-text>
-              <v-img class="logo" src="../assets/logo.png"></v-img>
+              <v-img contain class="logo" src="../assets/logo.png"></v-img>
             </v-card-text>
           </v-card>
         </v-col>

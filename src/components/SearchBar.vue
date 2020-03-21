@@ -3,7 +3,7 @@
     <v-card-text>
       <v-container>
         <v-row align="center" justify="center">
-          <v-col md="10" sm="10" cols="12">
+          <v-col md="8" sm="10" cols="12" offset-md="0" offset-sm="0" offset="1">
             <v-card flat color="transparent">
               <v-tabs height="35" v-model="dataTabs" class="parent-tab" hide-slider>
                 <v-tab
