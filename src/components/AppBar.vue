@@ -1,6 +1,13 @@
 <template>
   <div>
-    <v-app-bar color="white" light tile class=""  height="90" app >
+    <v-app-bar
+      color="white"
+      light
+      :flat="showlogo ? false : true"
+      :style=" showlogo ? 'box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.05) !important;' : ''"
+      height="86"
+      app
+    >
       <v-img
         v-if="showlogo"
         class="mx-2"
@@ -27,3 +34,4 @@ export default {
   props: ["showlogo"]
 };
 </script>
+
