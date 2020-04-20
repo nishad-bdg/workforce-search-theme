@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import SearchSuggestionPage from '../views/SearchSuggestionPage'
 import SearchResultCV from '../views/SearchResultCV'
 import SearchJobResult from '../views/SearchJobResult'
+import JobAlertDetails from '../components/JobAlertDetails'
 
 Vue.use(VueRouter)
 
@@ -26,6 +27,11 @@ const routes = [{
         path: '/search-job-result',
         name: 'SearchJobResult',
         component: SearchJobResult
+    },
+    {
+        path: '/job-alert-details',
+        name: 'JobAlertDetails',
+        component: JobAlertDetails
     }
 
 ]
